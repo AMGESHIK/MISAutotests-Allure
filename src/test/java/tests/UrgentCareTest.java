@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.junit5.ScreenShooterExtension;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,5 +20,6 @@ public class UrgentCareTest extends BaseTest {
         FindPage findPage = new FindPage();
         findPage.fillFinder("allure");
         findPage.clickSearchBtn();
+        Assertions.fail();
     }
 }
