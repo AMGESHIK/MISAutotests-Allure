@@ -14,8 +14,11 @@ public class BaseTest {
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;
-        Configuration.baseUrl = "8005";
+        Configuration.headless = true;
+        Configuration.timeout = 10000;
+        Configuration.screenshots = false;
+        Configuration.savePageSource = false;
+        Configuration.baseUrl = "http://localhost:8081";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 //        Configuration.holdBrowserOpen = true;
     }
